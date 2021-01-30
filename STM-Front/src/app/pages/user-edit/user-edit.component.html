@@ -1,0 +1,39 @@
+<app-routing-header></app-routing-header>
+<div class="center-content" >
+  <mat-card class="example-card">
+    <div class="example-full-width">
+      <mat-label class="id-label">Name:</mat-label>
+    </div>
+    <div class="example-full-width">
+      <label>
+        <input type="text" matInput   [(ngModel)]="name" >
+      </label>
+    </div>
+    <div class="example-full-width">
+      <mat-label class="id-label">lastName: </mat-label>
+    </div>
+    <div>
+      <label>
+        <input type="text" matInput   [(ngModel)]="lastName">
+      </label>
+    </div>
+    <div class="example-full-width">
+      <mat-label class="id-label">email: </mat-label>
+    </div>
+    <div class="example-full-width">
+      <label>
+        <input type="text" matInput   [(ngModel)]="email" >
+      </label>
+    </div>
+    <div class="example-full-width">
+      <mat-label class="id-label">password: </mat-label>
+    </div>
+    <div>
+      <label>
+        <input type="text" matInput   [(ngModel)]="password">
+      </label>
+    </div>
+    <button mat-button color="primary" (click)="setUser()">Submit</button>
+    <button mat-button color="primary" (click)="goBack()" >Go Back</button>
+  </mat-card>
+</div>

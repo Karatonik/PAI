@@ -1,0 +1,40 @@
+<app-routing-header></app-routing-header>
+<div class="center-content" >
+  <mat-card class="example-card">
+    <div class="example-full-width">
+      <mat-label class="id-label">title:</mat-label>
+    </div>
+    <div class="example-full-width">
+      <label>
+        <input type="text" matInput   [(ngModel)]="title" >
+      </label>
+    </div>
+    <div class="example-full-width">
+      <mat-label class="id-label">description: </mat-label>
+    </div>
+    <div>
+      <label>
+        <input type="text" matInput   [(ngModel)]="description">
+      </label>
+    </div>
+    <div class="example-full-width">
+      <mat-label class="id-label">type: </mat-label>
+    </div>
+    <mat-radio-group [(ngModel)]="type" aria-label="Select an option">
+      <mat-radio-button value="TASK">TASK</mat-radio-button>
+      <mat-radio-button value="BUG">BUG</mat-radio-button>
+      <mat-radio-button value="FEATURE">FEATURE</mat-radio-button>
+    </mat-radio-group>
+    <div class="example-full-width">
+      <mat-label class="id-label">status: </mat-label>
+    </div>
+    <mat-radio-group [(ngModel)]="status" aria-label="Select an option">
+      <mat-radio-button value="NEW">NEW</mat-radio-button>
+      <mat-radio-button value="IN_PROGRESS">IN_PROGRESS</mat-radio-button>
+      <mat-radio-button value="DONE">DONE</mat-radio-button>
+    </mat-radio-group>
+
+    <button mat-button color="primary" (click)="setTask()">Submit</button>
+    <button mat-button color="primary" (click)="goBack()" >Go Back</button>
+  </mat-card>
+</div>
